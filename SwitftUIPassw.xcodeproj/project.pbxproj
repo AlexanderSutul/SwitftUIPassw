@@ -11,6 +11,11 @@
 		F86382CF2A9532A000352A9C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86382CE2A9532A000352A9C /* ContentView.swift */; };
 		F86382D12A9532A100352A9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F86382D02A9532A100352A9C /* Assets.xcassets */; };
 		F86382D42A9532A100352A9C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F86382D32A9532A100352A9C /* Preview Assets.xcassets */; };
+		F86382DC2A9532B300352A9C /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86382DB2A9532B300352A9C /* ButtonStyles.swift */; };
+		F86382DF2A96570300352A9C /* PasswordLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86382DE2A96570300352A9C /* PasswordLabel.swift */; };
+		F86382E22A968E7100352A9C /* PasswordService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86382E12A968E7100352A9C /* PasswordService.swift */; };
+		F86382E52A96969E00352A9C /* ErrorLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86382E42A96969E00352A9C /* ErrorLabel.swift */; };
+		F8D372E02A98B2F300A44313 /* EnvironmentVariablesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D372DF2A98B2F300A44313 /* EnvironmentVariablesService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		F86382CE2A9532A000352A9C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F86382D02A9532A100352A9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F86382D32A9532A100352A9C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F86382DB2A9532B300352A9C /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
+		F86382DE2A96570300352A9C /* PasswordLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordLabel.swift; sourceTree = "<group>"; };
+		F86382E12A968E7100352A9C /* PasswordService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordService.swift; sourceTree = "<group>"; };
+		F86382E42A96969E00352A9C /* ErrorLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorLabel.swift; sourceTree = "<group>"; };
+		F8D372DF2A98B2F300A44313 /* EnvironmentVariablesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentVariablesService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +61,11 @@
 		F86382CB2A9532A000352A9C /* SwitftUIPassw */ = {
 			isa = PBXGroup;
 			children = (
-				F86382CC2A9532A000352A9C /* SwitftUIPasswApp.swift */,
+				F8D372DE2A98B2D800A44313 /* common */,
+				F86382E32A96968C00352A9C /* components */,
+				F86382E02A968E6300352A9C /* services */,
+				F86382DD2A9532BE00352A9C /* app */,
+				F86382DA2A9532A600352A9C /* styles */,
 				F86382CE2A9532A000352A9C /* ContentView.swift */,
 				F86382D02A9532A100352A9C /* Assets.xcassets */,
 				F86382D22A9532A100352A9C /* Preview Content */,
@@ -65,6 +79,47 @@
 				F86382D32A9532A100352A9C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F86382DA2A9532A600352A9C /* styles */ = {
+			isa = PBXGroup;
+			children = (
+				F86382DB2A9532B300352A9C /* ButtonStyles.swift */,
+			);
+			path = styles;
+			sourceTree = "<group>";
+		};
+		F86382DD2A9532BE00352A9C /* app */ = {
+			isa = PBXGroup;
+			children = (
+				F86382CC2A9532A000352A9C /* SwitftUIPasswApp.swift */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		F86382E02A968E6300352A9C /* services */ = {
+			isa = PBXGroup;
+			children = (
+				F86382E12A968E7100352A9C /* PasswordService.swift */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
+		F86382E32A96968C00352A9C /* components */ = {
+			isa = PBXGroup;
+			children = (
+				F86382DE2A96570300352A9C /* PasswordLabel.swift */,
+				F86382E42A96969E00352A9C /* ErrorLabel.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		F8D372DE2A98B2D800A44313 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				F8D372DF2A98B2F300A44313 /* EnvironmentVariablesService.swift */,
+			);
+			path = common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +193,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F86382CF2A9532A000352A9C /* ContentView.swift in Sources */,
+				F86382E52A96969E00352A9C /* ErrorLabel.swift in Sources */,
+				F86382DF2A96570300352A9C /* PasswordLabel.swift in Sources */,
+				F86382DC2A9532B300352A9C /* ButtonStyles.swift in Sources */,
+				F86382E22A968E7100352A9C /* PasswordService.swift in Sources */,
+				F8D372E02A98B2F300A44313 /* EnvironmentVariablesService.swift in Sources */,
 				F86382CD2A9532A000352A9C /* SwitftUIPasswApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +330,7 @@
 				DEVELOPMENT_TEAM = 6EC22GM3RJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				HOST = HOST;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +360,7 @@
 				DEVELOPMENT_TEAM = 6EC22GM3RJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				HOST = HOST;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
