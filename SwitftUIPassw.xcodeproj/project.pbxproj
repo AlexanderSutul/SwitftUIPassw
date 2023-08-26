@@ -29,6 +29,7 @@
 		F86382E12A968E7100352A9C /* PasswordService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordService.swift; sourceTree = "<group>"; };
 		F86382E42A96969E00352A9C /* ErrorLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorLabel.swift; sourceTree = "<group>"; };
 		F8D372DF2A98B2F300A44313 /* EnvironmentVariablesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentVariablesService.swift; sourceTree = "<group>"; };
+		F8D372E12A9A344C00A44313 /* Env.dev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Env.dev.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +46,7 @@
 		F86382C02A9532A000352A9C = {
 			isa = PBXGroup;
 			children = (
+				F8D372E12A9A344C00A44313 /* Env.dev.xcconfig */,
 				F86382CB2A9532A000352A9C /* SwitftUIPassw */,
 				F86382CA2A9532A000352A9C /* Products */,
 			);
@@ -329,6 +331,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwitftUIPassw/Preview Content\"";
 				DEVELOPMENT_TEAM = 6EC22GM3RJ;
 				ENABLE_PREVIEWS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"HOST=http://localhost:3000",
+					"$(inherited)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				HOST = HOST;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

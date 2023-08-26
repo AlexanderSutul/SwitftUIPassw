@@ -63,11 +63,18 @@ struct ContentView: View {
         switch passwordResult {
         case .success(let passwordResponse):
             currentPassword = passwordResponse.password
+        case .failure(.invalidUrl(url: let invalidUrl)):
+            print("invalid url \(invalidUrl)")
+            errorText = "Internal app error. Invalid api url."
+        case .failure(.invalidEnvVariable(let envVar)):
+            print("\(envVar) environment variable is not provided")
+            errorText = "Internal app error. We are working on it."
         case .failure(let err):
             errorText = err.localizedDescription
         default:
             break
         }
+
         isLoading = false
     }
 
